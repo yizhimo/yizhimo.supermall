@@ -14,11 +14,13 @@ export default {
 
 <style>
     #top-bar {
+     position: relative;
      display: flex;
      height: 44px;
      line-height: 44px;
      text-align: center;
-     z-index: 10;   
+     box-shadow: 0 0 2px 0 rgba(100, 100, 100, .1);
+     z-index: 999;   
     }
 
     .top-left {
