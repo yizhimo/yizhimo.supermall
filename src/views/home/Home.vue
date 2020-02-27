@@ -82,7 +82,7 @@
     // 组件加载完，创建生命周期函数created请求数据
     created() {
         this.getHomeUp()
-
+        
         this.getGoods('pop')
         this.getGoods('new')
         this.getGoods('sell')
@@ -101,6 +101,7 @@
       getHomeUp() {
         // 拿到的数据为数组类型
         getHomeMultidata().then(res => {
+          console.log(res)
           this.banners = res.data.banner.list;
           this.recommends = res.data.recommend.list;
         })
