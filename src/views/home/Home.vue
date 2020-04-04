@@ -12,7 +12,7 @@
               @scroll="pScroll" 
               @loadMore="loadMore">
         <div>
-          <home-swiper :banners="banners" class="home-s" @imageLoad="imageLoad"/>
+          <home-swiper :banners="banners" @imageLoad="imageLoad"/>
           <home-recommend-view :recommends="recommends"/>
           <home-feature/>
           <tab-con :titles="['流行','新款','其他']" 
